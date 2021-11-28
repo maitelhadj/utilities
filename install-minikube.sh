@@ -6,6 +6,3 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 # Clean
 rm minikube-linux-amd64
-
-# Start Minikube - Intall Kubernetes by the way
-minikube start
