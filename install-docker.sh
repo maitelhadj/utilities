@@ -3,10 +3,15 @@
 # Install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
+
+# Clean
 rm get-docker.sh
+
+# Start Docker service
 sudo systemctl start docker
 sudo systemctl enable docker
 
+# Add user to the Docker group / To simply execute Docker commands without sudo
 sudo usermod -aG docker $(whoami) && newgrp docker
 
 # Install Docker-Compose
